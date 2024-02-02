@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
-# a script that listens on poer 98 on localhost
+#!/bin/bash
 
-nc -l localhost 98
+# Define the port number
+PORT=98
+
+# Start listening on the specified port
+sudo nc -l -p $PORT
